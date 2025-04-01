@@ -1,4 +1,5 @@
 #include <SFML/Audio.hpp>
+#include <iostream>
 
 int main()
 {
@@ -6,7 +7,7 @@ int main()
     const bool open = instrumental.openFromFile("Inst.ogg");
     
     if(!open) exit(1);
-
+    std::cout << "All good!";
     return 0;
     
 }
