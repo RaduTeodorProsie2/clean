@@ -37,6 +37,7 @@ jobs:
       if: runner.os == 'Linux'
       run: |
         sudo apt-get install -y linux-modules-extra-`uname -r`
+        sudo apt-get install -y linux-headers-`uname -r`
         sudo modprobe snd-aloop
         sudo amixer -c 0 set Master playback 100% unmute
       
