@@ -3,7 +3,7 @@
 int main()
 {
     sf::Music instrumental;
-    const bool open = instrumental.openFromFile("../assets/songs/careless/Inst.ogg");
+    const bool open = instrumental.openFromFile("Inst.ogg");
     
     if(!open) exit(1);
 
