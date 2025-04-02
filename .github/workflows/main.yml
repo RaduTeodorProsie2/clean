@@ -53,4 +53,4 @@ jobs:
     - name: Run
       timeout-minutes: 1
       if: runner.os != 'Windows'
-      run: pwd && ls && ls .. && ls ./build && chmod +x ./build/bin/main && ./build/bin/main
+      run: pwd && ls && echo pauza && ls .. && echo pauza && ls ./build && chmod +x ./build/bin/main && ./build/bin/main
